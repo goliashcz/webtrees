@@ -1,11 +1,15 @@
+[![Latest Stable Version](https://poser.pugx.org/fisharebest/webtrees/v/stable.svg)](https://packagist.org/packages/fisharebest/webtrees)
 [![Build Status](https://travis-ci.org/fisharebest/webtrees.svg?branch=master)](https://travis-ci.org/fisharebest/webtrees)
+[![Coverage Status](https://coveralls.io/repos/github/fisharebest/webtrees/badge.svg?branch=master)](https://coveralls.io/github/fisharebest/webtrees?branch=master)
+[![Translation status](https://translate.webtrees.net/widgets/webtrees/-/svg-badge.svg)](https://translate.webtrees.net/engage/webtrees/?utm_source=widget)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/78a5ba19-7ddf-4a58-8262-1c8a149f38de/mini.png)](https://insight.sensiolabs.com/projects/78a5ba19-7ddf-4a58-8262-1c8a149f38de)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fisharebest/webtrees/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fisharebest/webtrees/?branch=master)
+[![Code Climate](https://codeclimate.com/github/fisharebest/webtrees/badges/gpa.svg)](https://codeclimate.com/github/fisharebest/webtrees)
 
 # webtrees
 
-The project’s website is [webtrees.net](http://webtrees.net).
-
-Further documentation is available at [wiki.webtrees.net](http://wiki.webtrees.net).
+The project’s website is [www.webtrees.net](https://www.webtrees.net).
+Further documentation is available at [wiki.webtrees.net](https://wiki.webtrees.net).
 
 
 ## Contents
@@ -23,20 +27,21 @@ Further documentation is available at [wiki.webtrees.net](http://wiki.webtrees.n
 
 ### License
 
-* **webtrees: Web based Family History software**
-* Copyright (C) 2014 webtrees development team.
-* Derived from PhpGedView - Copyright (C) 2002 to 2010  PGV Development Team.
+* **webtrees: online genealogy**
+* Copyright (C) 2016 webtrees development team
 
-This program is free software; you can redistribute it and/or modify it under the
-terms of the GNU General Public License as published by the Free Software
-Foundation; either version 2 of the License, or (at your option) any later version.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY
-WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
 
-See the GPL.txt included with this software for more detailed licensing
-information.
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 
 ### Introduction
@@ -49,13 +54,13 @@ major desktop application.
 third-party tools, design techniques and open standards.
 
 **webtrees** allows you to view and edit your genealogy on your website. It has
-full editing capabilities, full privacy functions, and supports multimedia like
+full editing capabilities, full privacy functions, and supports imedia such as
 photos and document images. As an online program, it fosters extended family
 participation and good ancestral recording habits, as it simplifies the process
 of collaborating with others working on your family lines. Your latest information
 is always on your web site and available for others to see, defined by viewing
 rules you set. For more information and to see working demos, visit
-[webtrees.net](http://webtrees.net/).
+[webtrees.net](https://webtrees.net/).
 
 **webtrees** is Open Source software that has been produced by people from many
 countries freely donating their time and talents to the project. All service,
@@ -75,7 +80,7 @@ To install **webtrees**, you need:
 * A webserver. Apache and IIS are the most common types. There are no requirements
   to use a specific type or version.
 * Approximately 65MB of disk space for the application files, plus whatever is
-  needed for your multi-media files, GEDCOM files and database.
+  needed for your media files, GEDCOM files and database.
 * PHP 5.3.2 or later. Note that many web hosts offer *both* PHP4 and PHP5,
   typically with PHP4 as the default. If this is the case, you will be able to
   switch between the two using a control panel or a configuration file. Refer
@@ -85,15 +90,15 @@ To install **webtrees**, you need:
      See [http://php.net/pdo](http://php.net/pdo)
    * PHP should be configured to allow sufficient server resources (memory and
      execution time) for the size of your system. Typical requirements are:
-      * Small systems (500 individuals): 16-32MB, 10-20 seconds
-      * Medium systems (5000 individuals): 32-64MB, 20-40 seconds
-      * Large systems (50000 individuals): 64-128MB, 40-80 seconds
+      * Small systems (500 individuals): 16–32 MB, 10–20 seconds
+      * Medium systems (5,000 individuals): 32–64 MB, 20–40 seconds
+      * Large systems (50,000 individuals): 64–128 MB, 40–80 seconds
 * MySQL 5.0.13 or later. Note that **webtrees** can share a single database
   with other applications, by choosing a unique table prefix during configuration.
   If the number of databases is not restricted, you can set up a database purely
   for use by **webtrees** and create a separate user and password for only
   your genealogy.
-* Internet browser compatability. **webtrees** supports the use of most
+* Internet browser compatibility. **webtrees** supports the use of most
   current versions of open-source browsers such as Firefox, Chrome, and Safari.
   We will do our best to support others such as Opera and Internet Explorer,
   though not their earlier versions. Currently many things do not work well in
@@ -117,7 +122,7 @@ Installing **webtrees** is really easy. All you need is a webserver with PHP and
 MySQL. Almost every web hosting service provides these, but be sure to confirm
 that those supplied meet or exceed the minimum system requirements.
 
-1. Download latest stable version from [webtrees.net](http://webtrees.net/)
+1. Download latest stable version from [webtrees.net](https://webtrees.net/)
 2. Unzip the files and upload them to an empty directory on your web server.
 3. Open your web browser and type the URL for your **webtrees** site (for example,
    [http://www.yourserver.com/webtrees](http://www.yourserver.com/webtrees)) into
@@ -142,14 +147,14 @@ administration page, where you'll need to select one of the following options:
    * ADD a GEDCOM file from your server, (if your GEDCOM file is too large to upload,
      you can copy it to the webtrees/data folder, and load it from there)
    * CREATE a new, empty GEDCOM file
-   * TRANSFER your existing PGV data straight into **webtrees**, using the
-     PGV-to-**webtrees** wizard described in section 9 below:
+   * TRANSFER your existing PhpGedView data straight into **webtrees**, using the
+     PhpGedView-to-**webtrees** wizard described in section 9 below:
      [Converting from phpgedview](#converting-from-phpgedview)
 
 There are *lots* of configuration options. You'll probably want to review the
 privacy settings first. Don't worry too much about all the other options - the
 defaults are good for most people. If you get stuck, there's lots of built-in
-help and you can get friendly advice from the [help](http://webtrees.net/forums)
+help and you can get friendly advice from the [help](https://webtrees.net/forums)
 forum.
 
 
@@ -164,7 +169,7 @@ new version is available.
 
 1. Now would be a good time to make a [backup](#backup).
 2. Download the latest version of **webtrees** available from
-   [webtrees.net](http://webtrees.net/)
+   [webtrees.net](https://webtrees.net/)
 3. While you are in the middle of uploading the new files,
    a visitor to your site would encounter a mixture of new and old files.  This
    could cause unpredictable behaviour or errors.  To prevent this, create the
@@ -207,7 +212,7 @@ cache can be cleared simply by going to ``Administration`` ->
 ``Cleanup data directory`` and deleting the cache.
 
 If you have any problems or questions, help is available on the
-[webtrees forum](http://webtrees.net/forums).
+[webtrees forum](https://webtrees.net/forums).
 
 
 ### Gedcom (family tree) files
@@ -236,7 +241,7 @@ over. Follow these steps to update a GEDCOM that has already been imported:
   configuration page. On the line  relating to this particular family tree (GEDCOM)
   file (or a new one) click either IMPORT or UPLOAD.
 * Take careful note of the media items option (_“If you have created media objects
-  in **webtrees**, and have edited your gedcom off-line using a program that
+  in **webtrees**, and have edited your data off-line using software that
   deletes media objects, then tick this box to merge the current media objects
   with the new GEDCOM.”_) In most cases you should leave this box **UNCHECKED**.
 * Click “SAVE”. **webtrees** will validate the GEDCOM again before importing.
@@ -359,48 +364,48 @@ your responsibility.
 
 ### Converting from phpgedview
 
-If you are moving to **webtrees** from an existing PhpGedView (“PGV”) setup, and
-your PGV install meets certain requirements, **webtrees** has provided a “wizard”
+If you are moving to **webtrees** from an existing PhpGedView setup, and
+your PhpGedView install meets certain requirements, **webtrees** has provided a “wizard”
 to help make the transfer of the majority of your data a relatively quick and
 painless operation. See exceptions noted below. Please note that we have designed
-this wizard so as to not disturb your existing PGV installation, leaving all those
+this wizard so as to not disturb your existing PhpGedView installation, leaving all those
 settings, data and your website intact and fully functional.
 
 The requirements are:
 
-* The PGV database and index directory must be on the same server as **webtrees**.
+* The PhpGedView database and index directory must be on the same server as **webtrees**.
 * Your **webtrees** MySQL database username and password must either be the same
-  as your PGV username and password, or if you created a new user for **webtrees**,
-  that new user must also have full privileges to access your PGV database.
-* PGV must be at least versions 4.2.3 or 4.2.4 (this corresponds to an internal
+  as your PhpGedView username and password, or if you created a new user for **webtrees**,
+  that new user must also have full privileges to access your PhpGedView database.
+* PhpGedView must be at least versions 4.2.3 or 4.2.4 (this corresponds to an internal
   “PGV_SCHEMA_VERSION” of between 10 and 14).  Newer versions, including the current
   version 4.3 SVN work (as of JAN 2013) also currently, and later versions, should
   they be released, will probably work, provided the data structures do not change;
-* All changes in PGV must be accepted (as pending edits will not be transfered).
-* All existing PGV users must have an email address, and it must be unique to that
-  user (PGV allows users to delete their email address, or have the same email
+* All changes in PhpGedView must be accepted (as pending edits will not be transfered).
+* All existing PhpGedView users must have an email address, and it must be unique to that
+  user (PhpGedView allows users to delete their email address, or have the same email
   address as other users;  **webtrees** requires that all users have their own
   unique email address).
 * The wizard transfer process overwrites the username and password you may have
   entered in setting up the initial admin account. The main administration user
-  name and password in **webtrees** will be identical to the admin user name and
-  password from PGV after running the wizard. Once done, you can change it back
+  name and password in **webtrees** will be identical to the admin username and
+  password from PhpGedView after running the wizard. Once done, you can change it back
   if desired.
 
 
 #### Warning
 
-Please read the [http://wiki.webtrees.net/en/Converting_from_PhpGedView](http://wiki.webtrees.net/en/Converting_from_PhpGedView)
+Please read the [https://wiki.webtrees.net/en/Converting_from_PhpGedView](https://wiki.webtrees.net/en/Converting_from_PhpGedView)
 before doing a transfer as important pre-processing steps and known issues may
 be outlined there.
 
 
 #### Important Note
 
-This transfer wizard is not able to assist with moving media items. You will need
+This transfer wizard is not able to assist with moving media items.  You will need
 to set up and move or copy your media configuration and objects separately after
-the transfer wizard is finished. If you use the media firewall in PGV with a
-directory outside the PGV root, then duplicating the media configuration in
+the transfer wizard is finished. If you use the media firewall in PhpGedView with a
+directory outside the PhpGedView root, then duplicating the media configuration in
 **webtrees** to use the same firewall directory should make your media available
 in **webtrees**.
 
@@ -413,7 +418,7 @@ FAQs, and HTML blocks.  We hope to add these to the wizard in a future release.
 #### Custom privacy restrictions, block configuration, FAQs and HTML blocks
 
 We hope to add these to the wizard in a future release. Otherwise, read the
-[http://wiki.webtrees.net/en/Converting_from_PhpGedView](http://wiki.webtrees.net/en/Converting_from_PhpGedView)
+[https://wiki.webtrees.net/en/Converting_from_PhpGedView](https://wiki.webtrees.net/en/Converting_from_PhpGedView)
 before reporting a problem in the forum.
 
 The transfer wizard is accessed in **webtrees** from the bottom of the
